@@ -636,29 +636,17 @@ h6 {
   padding: 3.125rem 0;
 }
 
-.contacts__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.contacts__content {
-  max-width: 31.875rem;
-}
-
-.contacts__list {
-  width: 100%;
+.contacts__title {
+  text-align: center;
+  margin-bottom: 1.875rem;
 }
 
 .list-contacts {
   display: -ms-grid;
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @supports (gap: clamp( 1.25rem , 0.7535460993rem  +  2.4822695035vw , 3rem )) {
@@ -703,8 +691,8 @@ h6 {
 
 .list-contacts__icon img {
   display: inline-block;
-  width: 70%;
-  height: 70%;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .list-contacts__title {
@@ -1000,6 +988,20 @@ textarea.form__input {
   margin-bottom: 0.625rem;
 }
 
+.window-types__more {
+  color: #097dd0;
+  display: inline-block;
+}
+
+.window-types__more span {
+  border-bottom: 1px solid #097dd0;
+}
+
+.window-types__more span:nth-child(2) {
+  color: #6cc14c;
+  border-bottom: 1px solid #6cc14c;
+}
+
 .window-types__btn {
   margin-top: 0.625rem;
   padding: 0.625rem;
@@ -1157,12 +1159,6 @@ body::after {
 @media (min-width: 61.99875em) {
   .menu-bottom__actions-text {
     display: block;
-  }
-}
-
-@media (max-width: 53.125em) {
-  .contacts__list {
-    margin-bottom: 1.875rem;
   }
 }
 
@@ -1392,8 +1388,10 @@ body::after {
     min-height: 15.625rem;
   }
 
-  .list-contacts__item {
-    max-width: 31.25rem;
+  .list-contacts {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 
   .windows__container {
